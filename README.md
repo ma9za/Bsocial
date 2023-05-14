@@ -12,15 +12,17 @@ Usage
 After opening the website, you will see the profile page with information about the person. The social media accounts are displayed as links, and you can click on them to visit the respective pages.
 
 To add a new social media platform, use the following code:
+
 ```html
 <a href="link-to-page" target="_blank" class="social-link social-media-name">Social Media Name</a>
 ```
 
 To customize the styling of the new social media platform, add a new CSS class:
+```html
 .social-media-name {
   background-color: #your-color-choice;
 }
-
+```
 Feel free to explore and enjoy the website!
 
 License
