@@ -34,3 +34,6 @@ Please note that you need to replace `[repository-url]`, `[LICENSE_NAME]`, and `
 
 You can now continue to add more sections, details, and customization based on your preferences. If you have any further questions, feel free to ask!
 
+
+view : 
+https://ma9za.github.io/Bsocial/
