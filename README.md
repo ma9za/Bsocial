@@ -2,7 +2,7 @@
 
 This is a website that showcases a profile of an important personality. It displays social media accounts and a brief biography of the person. The website is designed using HTML, CSS, and JavaScript.
 
-![Alt Text]([https://j.top4top.io/p_2690vlq3h0.jpeg])
+![Profile Image](https://j.top4top.io/p_2690vlq3h0.jpeg)
 
 
 ## Installation
