@@ -15,6 +15,7 @@ To add a new social media platform, use the following code:
 ```html
 <a href="link-to-page" target="_blank" class="social-link social-media-name">Social Media Name</a>
 \```
+
 To customize the styling of the new social media platform, add a new CSS class:
 .social-media-name {
   background-color: #your-color-choice;
