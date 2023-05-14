@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile</title>
+
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kD4Ck5BdPtF+to8xM6QhBsBS" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Custom CSS -->
+	
+	<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/eBw7xg/gplQ7Jr5w5/" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .main-container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+
+    .flag {
+      width: 30px;
+      margin-left: 5px;
+    }
+
+    .cursor-pointer {
+      cursor: pointer;
+    }
+		.icon-large {
+  font-size: 1.5rem;
+}
+.social-link {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 12px 0;
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.social-link:hover {
+  opacity: 0.9;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.instagram {
+  background-color: #e4405f;
+}
+.night-mode-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  cursor: pointer;
+  padding: 8px 12px;
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.night-mode-btn:hover {
+  opacity: 0.9;
+}
+
+  </style>
+</head>
+<body>
+	<center>
+		  <div class="main-container">
+    <div class="d-flex justify-content-between">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a id="arabic-flag" class="dropdown-item cursor-pointer">
+            العربية <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/2560px-Flag_of_Saudi_Arabia.svg.png" alt="Arabic">
+          </a>
+          <a id="english-flag" class="dropdown-item cursor-pointer">
+            English <img class="flag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png" alt="English">
+          </a>
+        </div>
+      </div>
+			<br />
+<div class="night-mode-btn" id="night-mode"><p id="Night">Night Mode</p></div>
+
+</div>
+	
+    <div class="text-center">
+      <img class="profile-image" src="https://i.pravatar.cc/150" alt="Profile Picture">
+      <h1 id="name">John Doe</h1>
+      <p id="bio">Web developer with a passion for creating beautiful and functional websites. Experienced in HTML, CSS, and JavaScript.</p>
+    </div>
+  </div>
+	
+	<div>
+  <a href="https://facebook.com" target="_blank" class="social-link facebook">Facebook</a>
+  <a href="https://twitter.com" target="_blank" class="social-link twitter">Twitter</a>
+  <a href="https://linkedin.com" target="_blank" class="social-link linkedin">LinkedIn</a>
+  <a href="https://instagram.com" target="_blank" class="social-link instagram">Instagram</a>
+</div>
+
+	</center>
+  <!-- Bootstrap JavaScript and its dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybB5IXplrIR5L5I0Z5bRz7lGvCmt2skWz+Ey9X5HIMe5y1p0n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    $(document).ready(function() {
+      // Change Language
+      const nameArabic = 'جون دو';
+      const bioArabic = 'مطور ويب يتمتع بشغف لإنشاء مواقع جميلة وفعالة. لديه خبرة في HTML و CSS و JavaScript.';
+			const NightArabic = 'الوضع الليلي';
+      
+      const nameEnglish = 'John Doe';
+      const bioEnglish = 'Web developer with a passion for creating beautiful and functional websites. Experienced in HTML, CSS, and JavaScript.';
+			const NightEnglish = 'Night Mode';
+
+      $('#arabic-flag').on('click', function() {
+        $('#name').text(nameArabic);
+        $('#bio').text(bioArabic);
+				$('#Night').text(NightArabic);
+      });
+
+      $('#english-flag').on('click', function() {
+        $('#name').text(nameEnglish);
+        $('#bio').text(bioEnglish);
+				$('#Night').text(NightEnglish);
+      });
+
+      // Night Mode
+      let nightMode = false;
+      $('#night-mode').on('click', function() {
+        if (!nightMode) {
+          $('body').css('background-color', '#1c1c1c');
+          $('body').css('color', '#f1f1f1');
+          nightMode = true;
+        } else {
+          $('body').css('background-color', '#ffffff');
+          $('body').css('color', '#1c1c1c');
+          nightMode = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
